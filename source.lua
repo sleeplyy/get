@@ -117,6 +117,7 @@ local repo = 'https://raw.githubusercontent.com/imcomingforyou6959-gif/UR4/main/
 local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
 local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
+local Spotify = loadstring(game:HttpGet(_47 .. 'addons/Spotify.lua'))()
 
 Library.ShowToggleFrameInKeybinds = true
 Library.ShowCustomCursor = true
@@ -140,6 +141,11 @@ local Boxes = {
     World = Window:AddTab('World'),
     ['UI Settings'] = Window:AddTab('UI Settings'),
 }
+
+Library.Directory = "spotifyforRawr"
+Spotify:SetLibrary(Library)
+Spotify:SetFolder('spotifyforrawr/Spotify')
+Spotify:BuildSpotifySection(Window['UI Settings'])
 
 local _main = Boxes.Combat:AddLeftGroupbox('Main')
 local _visual = Boxes.Visuals:AddLeftGroupbox('Visuals')
