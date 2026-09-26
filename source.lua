@@ -139,13 +139,8 @@ local Boxes = {
     Combat = Window:AddTab('Main'),
     Visuals = Window:AddTab('Visuals'),
     World = Window:AddTab('World'),
-    UISettings = Window:AddTab('UI Settings'),
 }
-
-Library.Directory = "spotifyforRawr"
-Spotify:SetLibrary(Library)
-Spotify:SetFolder('spotifyforrawr/Spotify')
-Spotify:BuildSpotifySection(Boxes.UISettings)
+Boxes['UI Settings'] = Window:AddTab('UI Settings')
 
 local _main = Boxes.Combat:AddLeftGroupbox('Main')
 local _visual = Boxes.Visuals:AddLeftGroupbox('Visuals')
@@ -473,7 +468,13 @@ _78:AddSlider('CFrameFlySpeed', {
     Rounding = 0,
 })
 
-local _96 = Boxes.UISettings:AddLeftGroupbox('Menu')
+local _96 = Boxes['UI Settings']:AddLeftGroupbox('Menu')
+
+
+Library.Directory = "spotifyforRawr"
+Spotify:SetLibrary(Library)
+Spotify:SetFolder('spotifyforrawr/Spotify')
+Spotify:BuildSpotifySection(Boxes['UI Settings'])
 
 _96:AddButton('Rejoin', function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer)
