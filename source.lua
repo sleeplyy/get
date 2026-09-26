@@ -142,10 +142,10 @@ local Boxes = {
     ['UI Settings'] = Window:AddTab('UI Settings'),
 }
 
-Library.Directory = "spotifyforRawr"
+repo.Directory = "spotifyforRawr"
 Spotify:SetLibrary(Library)
 Spotify:SetFolder('spotifyforrawr/Spotify')
-Spotify:BuildSpotifySection(Window['UI Settings'])
+Spotify:BuildSpotifySection(repo['UI Settings'])
 
 local _main = Boxes.Combat:AddLeftGroupbox('Main')
 local _visual = Boxes.Visuals:AddLeftGroupbox('Visuals')
