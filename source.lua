@@ -473,7 +473,7 @@ _78:AddSlider('CFrameFlySpeed', {
     Rounding = 0,
 })
 
-local _96 = Boxes['UI Settings']:AddLeftGroupbox('Menu')
+local _96 = Boxes.UISettings:AddLeftGroupbox('Menu')
 
 _96:AddButton('Rejoin', function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer)
