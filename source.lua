@@ -139,15 +139,13 @@ local Boxes = {
     Combat = Window:AddTab('Main'),
     Visuals = Window:AddTab('Visuals'),
     World = Window:AddTab('World'),
+    UISettings = Window:AddTab('UI Settings'),
 }
-
-local _391 = {}
-_391['UI Settings'] = Window:AddTab('UI Settings')
 
 Library.Directory = "spotifyforRawr"
 Spotify:SetLibrary(Library)
 Spotify:SetFolder('spotifyforrawr/Spotify')
-Spotify:BuildSpotifySection(_391['UI Settings'])
+Spotify:BuildSpotifySection(Boxes.UISettings)
 
 local _main = Boxes.Combat:AddLeftGroupbox('Main')
 local _visual = Boxes.Visuals:AddLeftGroupbox('Visuals')
