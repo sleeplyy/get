@@ -117,7 +117,7 @@ local repo = 'https://raw.githubusercontent.com/imcomingforyou6959-gif/UR4/main/
 local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
 local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
-local Spotify = loadstring(game:HttpGet(Library .. 'addons/Spotify.lua'))()
+local Spotify = loadstring(game:HttpGet(repo .. 'addons/Spotify.lua'))()
 
 Library.ShowToggleFrameInKeybinds = true
 Library.ShowCustomCursor = true
