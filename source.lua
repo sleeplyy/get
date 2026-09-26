@@ -139,8 +139,10 @@ local Boxes = {
     Combat = Window:AddTab('Main'),
     Visuals = Window:AddTab('Visuals'),
     World = Window:AddTab('World'),
-    _391['UI Settings'] = Window:AddTab('UI Settings'),
 }
+
+local _391 = {}
+_391['UI Settings'] = Window:AddTab('UI Settings')
 
 Library.Directory = "spotifyforRawr"
 Spotify:SetLibrary(Library)
